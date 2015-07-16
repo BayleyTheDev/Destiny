@@ -12,11 +12,10 @@ import org.bukkit.plugin.java.JavaPlugin;
  * Created by Bayley on 4/24/2015.
  */
 public final class Main extends JavaPlugin implements Listener {
-    ///Hello
-    //Test
+
     @Override
     public void onDisable() {
-
+//testt
     }
 
     @Override
@@ -29,7 +28,8 @@ public final class Main extends JavaPlugin implements Listener {
     public void onLogin(PlayerJoinEvent event) {
         event.setJoinMessage(ChatColor.YELLOW + event.getPlayer().getName() + ChatColor.RESET + " has connected to Minecraft Roleplay.");
 
-
+        event.getPlayer().getInventory().clear();
+        event.getPlayer().sendMessage(ChatColor.YELLOW + "" + ChatColor.BOLD + "Hello," + ChatColor.RESET + "" + ChatColor.YELLOW + " and welcome to the home of the Minecraft Roleplay Gamemode. Which is currently in the beta stage. Please wait around for the next game to start!");
     }
 
 
