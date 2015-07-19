@@ -15,14 +15,14 @@ public final class Main extends JavaPlugin implements Listener {
 
     @Override
     public void onDisable() {
-//testt
+
     }
 
     @Override
     public void onEnable() {
-        getLogger().info("Minecraft Roleplay TTT has been launched.");
+        getLogger().info("Destiny has been launched.");
         getServer().getPluginManager().registerEvents(this, this);
-        getLogger().info("Minecraft Roleplay TTT registered events.");
+        getLogger().info("Destiny registered events.");
     }
     @EventHandler
     public void onLogin(PlayerJoinEvent event) {
