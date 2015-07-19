@@ -26,10 +26,10 @@ public final class Main extends JavaPlugin implements Listener {
     }
     @EventHandler
     public void onLogin(PlayerJoinEvent event) {
-        event.setJoinMessage(ChatColor.YELLOW + event.getPlayer().getName() + ChatColor.RESET + " has connected to Minecraft Roleplay.");
+        event.setJoinMessage(ChatColor.YELLOW + event.getPlayer().getName() + ChatColor.RESET + " has connected to Destiny.");
 
         event.getPlayer().getInventory().clear();
-        event.getPlayer().sendMessage(ChatColor.YELLOW + "" + ChatColor.BOLD + "Hello," + ChatColor.RESET + "" + ChatColor.YELLOW + " and welcome to the home of the Minecraft Roleplay Gamemode. Which is currently in the beta stage. Please wait around for the next game to start!");
+        event.getPlayer().sendMessage(ChatColor.YELLOW + "" + ChatColor.BOLD + "Hello," + ChatColor.RESET + "" + ChatColor.YELLOW + " and welcome to Destiny. Which is currently in the alpha stage.");
     }
 
 
