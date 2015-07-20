@@ -10,7 +10,7 @@ public class Destiny extends JavaPlugin {
     @Override
     public void onEnable() {
 
-
+//
 
     }
 
