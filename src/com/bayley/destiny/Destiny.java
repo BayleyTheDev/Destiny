@@ -2,19 +2,16 @@ package com.bayley.destiny;
 
 import com.bayley.destiny.entities.EntityData;
 import com.bayley.destiny.listeners.EntityDamageByEntityListener;
+import com.bayley.destiny.listeners.EntityShootBowListener;
 import com.bayley.destiny.listeners.PlayerInteractListener;
-import org.bukkit.Bukkit;
-import org.bukkit.ChatColor;
+import com.bayley.destiny.listeners.PlayerJoinListener;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
-import org.bukkit.craftbukkit.libs.jline.internal.Log;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.Player;
-import org.bukkit.event.Listener;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import java.util.HashMap;
 import java.util.WeakHashMap;
 
 /**
@@ -37,7 +34,8 @@ public class Destiny extends JavaPlugin{
 
         pm.registerEvents(new PlayerInteractListener(), this);
         pm.registerEvents(new EntityDamageByEntityListener(), this);
-
+        pm.registerEvents(new EntityShootBowListener(), this);
+        pm.registerEvents(new PlayerJoinListener(), this);
 
 
     }

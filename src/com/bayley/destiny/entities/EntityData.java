@@ -1,6 +1,7 @@
 package com.bayley.destiny.entities;
 
 import org.bukkit.Location;
+import org.bukkit.entity.Entity;
 import org.bukkit.entity.Player;
 
 /**
@@ -11,10 +12,10 @@ public class EntityData {
     private Integer range;
     private Double damage;
     private Double hsmultiplier;
-    private Player firer;
+    private Entity firer;
 
     //constructor
-    public EntityData(Location loc, Integer range, Double damage, Player firer, Double hsmultiplier, Double cooldown) {
+    public EntityData(Location loc, Integer range, Double damage, Entity firer, Double hsmultiplier, Double cooldown) {
         this.firedfrom = loc;
         this.range = range;
         this.damage = damage;
@@ -31,7 +32,7 @@ public class EntityData {
     public Double getDamage() {
         return damage;
     }
-    public Player getFirer() {
+    public Entity getFirer() {
 
         return firer;
     }
